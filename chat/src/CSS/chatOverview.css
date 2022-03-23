@@ -1,0 +1,66 @@
+.overview-wrapper{
+	height: 20%;
+	max-height: 70px;
+	width: 90%;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.overview-profile{
+	height: 100%;
+	width: 20%;
+}
+
+.profile-pic{
+	height: 80%;
+	width: 80%;
+	filter: invert(86%) sepia(3%) saturate(245%) hue-rotate(131deg) brightness(89%) contrast(97%);
+}
+
+.overview-details{
+	height: 100%;
+	width: 60%;
+	border-bottom: 1px solid var(--accent-color);
+}
+
+.name{
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--text-color-light);
+}
+
+.last-message{
+	font-size: 0.75rem;
+	color: var(--text-color-light);
+}
+
+.overview-timedate{
+	height: 100%;
+	width: 20%;
+	border-bottom: 1px solid var(--accent-color);
+
+}
+
+.timedate{
+	font-size: 1rem;
+	color: var(--text-color-light);
+}
+
+.selected{
+	background-color: rgba(19, 168, 168, 0.75);
+}
+
+.selected .overview-timedate, .selected .overview-details{
+	border: 0;
+}
+
+.selected .name, .selected .last-message, .selected .timedate{
+	color: var(--text-color);
+}
+
+.selected .profile-pic{
+	height: 80%;
+	width: 80%;
+	filter: brightness(0) saturate(100%);
+}
