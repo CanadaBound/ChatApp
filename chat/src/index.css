@@ -1,13 +1,180 @@
+:root{
+  --root-background-color: #600560;
+  --background-color-darker:#1d2020;
+  --background-color-middle: #313131;
+  --background-color-lighter: #393d3d;
+  --chat-sender-color: #53D4DF;
+  --chat-receiver-color:#393d3d;
+  --text-color-light: #ffffff;
+  --text-color: #000000;
+  --text-color2: #383838;
+  --accent-color: #bec3c3;
+}
+
+#root{
+  height: 100vh;
+  width: 100vw;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+}
 body {
+ 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--root-background-color);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  align-items: center;
+  justify-content: safe center;
+}
+
+.space-between{
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.space-evenly{
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.flex-start{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-start-center{
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end-center{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.br-1{
+  border-radius: 1rem;
+}
+
+.br-left-1{
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.br-right-1{
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.br-quarter{
+  border-radius: 0.25rem;
+}
+
+.br-half{
+  border-radius: 0.5rem;
+}
+
+.br-top-right-1{
+  border-top-right-radius: 1rem;
+
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

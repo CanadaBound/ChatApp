@@ -1,0 +1,58 @@
+.chat-item{
+	height: max-content;
+	width: max-content;
+	max-width: 80%;
+	padding: 0 5% 0 5%;
+	position: relative;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+.sender-message{
+	background-color: var(--chat-sender-color);
+}
+
+.receiver-message{
+	background-color: var(--chat-receiver-color);
+
+}
+
+
+
+.sender-message .chat-text{
+	color: var(--text-color);
+}
+
+.receiver-message .chat-text{
+	color: var(--text-color-light);
+}
+
+.timedate-modifier-receiver{
+	position: absolute;
+	font-size: 0.5rem;
+	width: max-content;
+	bottom:110%;
+	left: 0%;
+	display: none;
+
+}
+.timedate-modifier-sender{
+	position: absolute;
+	font-size: 0.5rem;
+	color: var(--text-color-light) !important;
+	width: max-content;
+	bottom:110%;
+	right: 0%;
+	display: none;
+}
+
+.timedate-modifier-receiver-active{
+	display: block;
+}
+
+.timedate-modifier-sender-active{
+	display: block;
+}
+
